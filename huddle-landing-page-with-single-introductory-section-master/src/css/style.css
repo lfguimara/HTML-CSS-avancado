@@ -1,0 +1,169 @@
+html {
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../../images/bg-desktop.svg)center no-repeat;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    padding: 60px 0 80px 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .container-imagem {
+    margin: 7px 0 0 80px;
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    max-height: 465px;
+    margin-top: 40px;
+    padding: 0 50px;
+}
+
+.container .text h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.container .text p {
+    font-weight: 400;
+    text-align: justify;
+    color: white;
+}
+
+.text button a {
+    font-weight: 600;
+    color: hsl(257, 40%, 49%);
+}
+
+button {
+    border:none;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 200px;
+    min-height: 50px;
+    transition: 0.5s;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: end;
+
+}
+
+.social a i {
+    font-size: 30px;
+    margin-right: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 20px;
+    transition: 0.5s;
+    color: white;
+}
+
+.social a i:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+
+}
+
+.footer .attribution a {
+    transition: 0.5s;
+}
+
+.footer .attribution a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+}
+
+@media(max-width:425px) {
+    body {
+        background: url(../images/bg-mobile.svg)no-repeat;
+    }
+
+    .logo {
+        display: flex;
+        padding: 30px 0 30px 30px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .container-imagem {
+        display: flex;
+        margin: 7px 0 0 60px;
+    }
+
+    .container-imagem img {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .container .text {
+        align-items: center;
+    }
+
+    .container .text h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container .text p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+
+    .footer a i {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .footer .attribution {
+        display: flex;
+
+    }
+
+}
